@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  twist: pothix/twist@0.0.1
+  twist: pothix/twist@0.0.2
 
 jobs:
   build:
@@ -9,6 +9,7 @@ jobs:
       - image: rust:latest
     steps:
       - checkout
+      - twist/notify
       - run:
           name: Version information
           command: rustc --version; cargo --version; rustup --version
