@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  twist: pothix/twist@0.0.2
+  twist: pothix/twist@0.0.3
 
 jobs:
   build:
